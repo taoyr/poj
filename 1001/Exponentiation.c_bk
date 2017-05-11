@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#define DEBUG
+
+static double R = 0;
+static long double result = 0;
+static int n = 0;
+
+long double exponentiation();
+
+int main() {
+#ifdef DEBUG
+    printf("[DEBUG]long double byte is %lu\n", sizeof(long double));
+#endif
+    while (scanf("%lf%d", &R, &n) != EOF) {
+        result = exponentiation();
+        printf("%Lf\n", result);
+    }
+}
+
+long double exponentiation() {
+    result = R;
+#ifdef DEBUG
+    printf("[DEBUG] R=%lf, result=%Lf\n", R, result);
+#endif
+
+    for(int i = 1; i < n; i++) {
+        result = R*result;
+#ifdef DEBUG
+        printf("[DEBUG]i=%d, result=%Lf\n", i, result);
+#endif
+    }
+
+    return result;
+}

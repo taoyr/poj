@@ -1,0 +1,758 @@
+cscope 15 $HOME/alg/1001 -q 0000000031 0000004136
+	@/Users/taoyongren/alg/1001/Exponentiation.c
+
+1 
+	~<°dio.h
+>
+
+2 
+	~<°dlib.h
+>
+
+6 
+	gR
+ = 0;
+
+7 
+	gn
+ = 0;
+
+8 
+	g¶ŸP
+ = -1;
+
+9 
+	giRAºay
+[7] = {0};
+
+10 
+	giRLí
+ = 0;
+
+11 
+	giResu…Aºay
+[150] = {0};
+
+12 
+	giResu…Lí
+ = 0;
+
+14 
+exp⁄ítüti⁄
+();
+
+15 
+dñëeSlŸ
+(*);
+
+16 
+addSlŸ
+();
+
+17 
+öô
+();
+
+19 
+	$öô
+() {
+
+20 
+R
+ = 0;
+
+21 
+n
+ = 0;
+
+22 
+¶ŸP
+ = -1;
+
+23 
+iResu…Lí
+ = 0;
+
+24 
+iRLí
+ = 0;
+
+25 
+i
+ = 0; i < 7; i++) {
+
+26 
+iRAºay
+[
+i
+] = 0;
+
+29 
+i
+ = 0; i < 150; i++) {
+
+30 
+iResu…Aºay
+[
+i
+] = 0;
+
+32 
+	}
+}
+
+34 
+	$maö
+() {
+
+35 
+cTempAºay
+[7] = {0};
+
+37 
+	`sˇnf
+("%f%d", &
+R
+, &
+n
+Ë!
+EOF
+) {
+
+38 
+	`¢¥ötf
+(
+cTempAºay
+, 7, "%f", 
+R
+);
+
+39 
+	`dñëeSlŸ
+(
+cTempAºay
+);
+
+40 #ifde‡
+DEBUG
+
+
+41 
+	`¥ötf
+("cTempAºay=%s\n", 
+cTempAºay
+);
+
+42 
+	`fÊush
+(
+°dout
+);
+
+44 
+i
+ = 6, 
+j
+ = 0; i >= 0; i--) {
+
+45 i‡(
+cTempAºay
+[
+i
+] != 0) {
+
+46 
+iRAºay
+[
+j
+] = 
+cTempAºay
+[
+i
+] - '0';
+
+47 
+j
+++;
+
+48 
+iRLí
+ = 
+iResu…Lí
+ = 
+j
+;
+
+51 #ifde‡
+DEBUG
+
+
+52 
+i
+ = 0; i < 
+iRLí
+; i++) {
+
+53 
+	`¥ötf
+("iRAºay[%d]=%d\n", 
+i
+, 
+iRAºay
+[i]);
+
+54 
+	`fÊush
+(
+°dout
+);
+
+58 
+	`exp⁄ítüti⁄
+();
+
+59 
+	`addSlŸ
+();
+
+61 i‡(
+iResu…Aºay
+[0] == 0) {
+
+62 
+i
+ = 1; i < 
+iResu…Lí
+; i++) {
+
+63 i‡(
+iResu…Aºay
+[
+i
+] != 0) {
+
+64 
+iResu…Aºay
+[
+i
+ - 1] = -2;
+
+69 
+i
+ = 
+iResu…Lí
+ -1; i >= 0; i--) {
+
+70 i‡(
+iResu…Aºay
+[
+i
+] == -2) {
+
+72 } i‡(
+iResu…Aºay
+[
+i
+] == -1) {
+
+73 
+	`¥ötf
+(".");
+
+75 
+	`¥ötf
+("%d", 
+iResu…Aºay
+[
+i
+]);
+
+79 
+	`¥ötf
+("\n");
+
+80 
+	`öô
+();
+
+82 
+	}
+}
+
+84 
+	$exp⁄ítüti⁄
+() {
+
+85 
+iTempResu…Aºay
+[150] = {0};
+
+86 
+iTempResu…Lí
+ = 0;
+
+88 
+i
+ = 0; i < 
+iResu…Lí
+; i++) {
+
+89 
+iTempResu…Aºay
+[
+i
+] = 
+iRAºay
+[i];
+
+90 
+iTempResu…Lí
+ = 
+iRLí
+;
+
+93 
+k
+ = 0; k < 
+n
+ - 1; k++) {
+
+94 #ifde‡
+DEBUG
+
+
+95 
+	`¥ötf
+("k=%d, iRLí=%d, iTempResu…Lí=%d\n", 
+k
+, 
+iRLí
+, 
+iTempResu…Lí
+);
+
+96 
+	`¥ötf
+("iTempResultArray=");
+
+97 
+i
+ = 
+iTempResu…Lí
+ - 1; i >= 0; i--) {
+
+98 
+	`¥ötf
+("%d", 
+iTempResu…Aºay
+[
+i
+]);
+
+100 
+	`¥ötf
+("\n");
+
+101 
+	`fÊush
+(
+°dout
+);
+
+103 
+i
+ = 0; i < 
+iRLí
+; i++) {
+
+104 
+j
+ = 0; j < 
+iTempResu…Lí
+; j++) {
+
+105 
+iResu…Aºay
+[
+i
+ + 
+j
+] = 
+iTempResu…Aºay
+[j] * 
+iRAºay
+[i] + iResultArray[i + j];
+
+109 
+iResu…MaxLí
+ = 
+iTempResu…Lí
+ * 2;
+
+110 
+i
+ = 
+iResu…MaxLí
+; i >= 0; i--) {
+
+111 i‡(
+iResu…Aºay
+[
+i
+] != 0) {
+
+112 
+iResu…Lí
+ = 
+i
+ + 1;
+
+116 
+i
+ = 0; i < 
+iResu…MaxLí
+; i++) {
+
+117 
+iResu…Aºay
+[
+i
+ + 1] = iResultArray[i]/10 + iResultArray[i + 1];
+
+118 
+iResu…Aºay
+[
+i
+] = iResultArray[i] % 10;
+
+121 
+i
+ = 0; i < 
+iResu…MaxLí
+; i++) {
+
+122 
+iTempResu…Aºay
+[
+i
+] = 
+iResu…Aºay
+[i];
+
+123 
+iResu…Aºay
+[
+i
+] = 0;
+
+126 
+i
+ = 
+iResu…MaxLí
+; i >= 0; i--) {
+
+127 i‡(
+iTempResu…Aºay
+[
+i
+] != 0) {
+
+128 
+iResu…Lí
+ = 
+iTempResu…Lí
+ = 
+i
+ + 1;
+
+134 
+i
+ = 0; i < 
+iTempResu…Lí
+; i++) {
+
+135 
+iResu…Aºay
+[
+i
+] = 
+iTempResu…Aºay
+[i];
+
+137 #ifde‡
+DEBUG
+
+
+138 
+	`¥ötf
+("iResultArray=");
+
+139 
+i
+ = 
+iResu…Lí
+ - 1; i >= 0; i--) {
+
+140 
+	`¥ötf
+("%d", 
+iResu…Aºay
+[
+i
+]);
+
+142 
+	`¥ötf
+("\n");
+
+143 
+	`fÊush
+(
+°dout
+);
+
+145 
+	}
+}
+
+147 
+	$dñëeSlŸ
+(* 
+cAºay
+) {
+
+148 
+i
+ = 5; i >= 0; i--) {
+
+149 
+¶ŸP
+++;
+
+150 if(
+cAºay
+[
+i
+] == '.') {
+
+151 
+j
+ = 5; j > 
+i
+; j--) {
+
+152 i‡(
+cAºay
+[
+j
+] != '0') {
+
+155 
+¶ŸP
+--;
+
+156 
+cAºay
+[
+j
+] = 0;
+
+160 
+j
+ = 
+i
+; j < 6; j++) {
+
+161 
+cAºay
+[
+j
+] = cArray[j + 1];
+
+164 
+j
+ = 0; j <= 6; j++) {
+
+165 i‡(
+cAºay
+[
+j
+] == 0) {
+
+167 } i‡(
+cAºay
+[
+j
+] == '0') {
+
+168 
+cAºay
+[
+j
+] = 0;
+
+179 
+¶ŸP
+ = 0;
+
+180 
+	}
+}
+
+182 
+	$addSlŸ
+() {
+
+183 i‡(
+¶ŸP
+ == 0) {
+
+187 
+iResu…Lí
+++;
+
+188 
+¶ŸP
+ = slŸP * 
+n
+;
+
+189 #ifde‡
+DEBUG
+
+
+190 
+	`¥ötf
+("¶ŸP=%d\n", 
+¶ŸP
+);
+
+191 
+	`fÊush
+(
+°dout
+);
+
+193 i‡(
+¶ŸP
+ >
+iResu…Lí
+) {
+
+194 
+i
+ = 
+iResu…Lí
+ - 1; i < 
+¶ŸP
+; i++) {
+
+195 
+iResu…Aºay
+[
+i
+] = 0;
+
+198 
+iResu…Aºay
+[
+¶ŸP
+] = -1;
+
+199 
+iResu…Lí
+ = 
+¶ŸP
+ + 1;
+
+204 
+ãmp
+ = 
+iResu…Aºay
+[
+¶ŸP
+];
+
+205 
+ãmp2
+;
+
+206 
+iResu…Aºay
+[
+¶ŸP
+] = -1;
+
+208 
+i
+ = 
+¶ŸP
+ + 1; i < 
+iResu…Lí
+; i++) {
+
+209 
+ãmp2
+ = 
+iResu…Aºay
+[
+i
+];
+
+210 
+iResu…Aºay
+[
+i
+] = 
+ãmp
+;
+
+211 
+ãmp
+ = 
+ãmp2
+;
+
+213 #ifde‡
+DEBUG
+
+
+214 
+	`¥ötf
+("iResultArray=");
+
+215 
+i
+ = 
+iResu…Lí
+ - 1; i >= 0; i--) {
+
+216 
+	`¥ötf
+("%d", 
+iResu…Aºay
+[
+i
+]);
+
+218 
+	`¥ötf
+("\n");
+
+219 
+	`fÊush
+(
+°dout
+);
+
+221 
+	}
+}
+
+	@
+1
+.
+0
+1
+44
+/Users/taoyongren/alg/1001/Exponentiation.c

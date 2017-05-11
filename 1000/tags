@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+LOGD	Debug.h	21;"	d
+LOGD1	Debug.h	24;"	d
+LOGD2	Debug.h	27;"	d
+LOGD3	Debug.h	30;"	d
+_DEBUG_H	Debug.h	2;"	d
+add	A+BProblem.c	/^int add(int a, int b) {$/;"	f
+fd	Debug.h	/^static FILE *fd;$/;"	v
+judgeResult	Debug.c	/^void judgeResult() {$/;"	f
+logF	Debug.c	/^int logF(const char* string) {$/;"	f
+logF1	Debug.c	/^int logF1(const char* string, int para) {$/;"	f
+logF2	Debug.c	/^int logF2(const char* string1, int para1, const char* string2, int para2) {$/;"	f
+logF3	Debug.c	/^int logF3(const char* string1, int para1, const char* string2, int para2, const char* string3, int para3) {$/;"	f
+logFA	Debug.c	/^int logFA(const int array[], const char* name, int length) {$/;"	f
+main	A+BProblem.c	/^int main() {$/;"	f
+openInputFile	Debug.c	/^int openInputFile() {$/;"	f
+openOutputFile	Debug.c	/^int openOutputFile() {$/;"	f
+openResultFile	Debug.c	/^static void openResultFile() {$/;"	f	file:
+outputFd	Debug.h	/^static FILE *outputFd;$/;"	v
+resultFd	Debug.h	/^static FILE *resultFd;$/;"	v
+std	Makefile	/^	gcc -c Debug.c -std=c99 -o Debug.o -g$/;"	m

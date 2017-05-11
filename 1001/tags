@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+R	Exponentiation.c	/^static float R = 0;$/;"	v	file:
+addSlot	Exponentiation.c	/^void addSlot() {$/;"	f
+deleteSlot	Exponentiation.c	/^void deleteSlot(char* cArray) {$/;"	f
+exponentiation	Exponentiation.c	/^void exponentiation() {$/;"	f
+iRArray	Exponentiation.c	/^static int iRArray[7] = {0};$/;"	v	file:
+iRLen	Exponentiation.c	/^static int iRLen = 0;$/;"	v	file:
+iResultArray	Exponentiation.c	/^static int iResultArray[150] = {0};$/;"	v	file:
+iResultLen	Exponentiation.c	/^static int iResultLen = 0;$/;"	v	file:
+init	Exponentiation.c	/^void init() {$/;"	f
+main	Exponentiation.c	/^int main() {$/;"	f
+n	Exponentiation.c	/^static int n = 0;$/;"	v	file:
+slotP	Exponentiation.c	/^static int slotP = -1;$/;"	v	file:
+std	Makefile	/^	gcc -c -std=c99 -g Exponentiation.c -o Exponentiation.o -g $/;"	m
+std	Makefile	/^	gcc -std=c99 -g Exponentiation.o -o Exponentiation $/;"	m

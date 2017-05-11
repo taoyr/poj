@@ -1,0 +1,687 @@
+cscope 15 $HOME/poj/1002 -q 0000000050 0000003710
+	@/Users/moon/poj/1002/487-3279.c
+
+1 
+	~<°dio.h
+>
+
+2 
+	~<°dlib.h
+>
+
+3 
+	~<°dboﬁ.h
+>
+
+5 
+	gaiNumbî
+[100001] = {0};
+
+6 
+	gacKeyPad
+[128] = {0};
+
+8 
+mîge
+(
+low
+, 
+mid
+, 
+high
+);
+
+9 
+mîge_s‹t
+(
+fú°
+, 
+œ°
+);
+
+10 
+°‹eI≈ut
+([], , );
+
+11 
+öô
+();
+
+12 
+s‹t
+();
+
+13 
+ouçut
+();
+
+15 
+	$maö
+() {
+
+16 
+	`öô
+();
+
+18 
+num
+ = 0;
+
+19 
+	`sˇnf
+("%d", &
+num
+);
+
+21 i‡(100000 < 
+num
+ || 0 >Çum) {
+
+25 
+i
+ = 0; i < 
+num
+; i++) {
+
+26 
+ãmp
+[16] = {0};
+
+27 
+	`sˇnf
+("%s", 
+ãmp
+);
+
+28 
+	`Ârötf
+(
+°dîr
+, "sˇn‡°rög=%s\n", 
+ãmp
+);
+
+30 
+	`°‹eI≈ut
+(
+ãmp
+, 16, 
+i
+);
+
+32 
+	`mîge_s‹t
+(0, 
+num
+ - 1);
+
+35 
+	`ouçut
+(
+num
+);
+
+36 
+	}
+}
+
+38 
+	$ouçut
+(
+num
+) {
+
+39 
+boﬁ
+ 
+isDup
+ = 
+Ál£
+;
+
+41 
+i
+ = 0; i < 
+num
+; i++) {
+
+42 
+sum
+ = 1;
+
+43 
+ãmp1
+[10] = {0};
+
+45 
+	`•rötf
+(
+ãmp1
+, "%d", 
+aiNumbî
+[
+i
+]);
+
+47 
+j
+ = 
+i
+ + 1; j < 
+num
+; j++) {
+
+48 i‡(
+aiNumbî
+[
+j
+] =aiNumbî[
+i
+]) {
+
+49 
+sum
+++;
+
+50 
+i
+ = 
+j
+ - 1;
+
+54 
+i
+ = 
+j
+ - 1;
+
+58 i‡(2 > 
+sum
+) {
+
+62 
+	`¥ötf
+("%c%c%c-%c%c%c%¯%d", 
+ãmp1
+[0],Åemp1[1],Åemp1[2],Åemp1[3],
+
+63 
+ãmp1
+[4],Åemp1[5],Åemp1[6], 
+sum
+);
+
+64 
+isDup
+ = 
+åue
+;
+
+66 i‡(
+i
+ < 
+num
+ - 1) {
+
+67 
+	`¥ötf
+("\n");
+
+71 i‡(!
+isDup
+) {
+
+72 
+	`¥ötf
+("No duplicates.\n");
+
+74 
+	}
+}
+
+76 
+	$mîge
+(
+low
+, 
+mid
+, 
+high
+){
+
+77 
+i
+, 
+k
+;
+
+78 *
+tmp
+ = (*)
+	`mÆloc
+((
+high
+-
+low
++1)*());
+
+80 
+À·_low
+ = 
+low
+;
+
+81 
+À·_high
+ = 
+mid
+;
+
+82 
+right_low
+ = 
+mid
+ + 1;
+
+83 
+right_high
+ = 
+high
+;
+
+84 
+k
+=0; 
+À·_low
+<=
+À·_high
+ && 
+right_low
+<=
+right_high
+; k++){
+
+85 if(
+aiNumbî
+[
+À·_low
+]<˜iNumbî[
+right_low
+]){
+
+86 
+tmp
+[
+k
+] = 
+aiNumbî
+[
+À·_low
+++];
+
+88 
+tmp
+[
+k
+] = 
+aiNumbî
+[
+right_low
+++];
+
+91 if(
+À·_low
+ <
+À·_high
+){
+
+93 
+i
+=
+À·_low
+;i<=
+À·_high
+;i++)
+
+94 
+tmp
+[
+k
+++] = 
+aiNumbî
+[
+i
+];
+
+96 if(
+right_low
+ <
+right_high
+){
+
+99 
+i
+=
+right_low
+; i<=
+right_high
+; i++)
+
+100 
+tmp
+[
+k
+++] = 
+aiNumbî
+[
+i
+];
+
+102 
+i
+=0; i<
+high
+-
+low
++1; i++)
+
+103 
+aiNumbî
+[
+low
++
+i
+] = 
+tmp
+[i];
+
+104 
+	`‰ì
+(
+tmp
+);
+
+106 
+	}
+}
+
+108 
+	$mîge_s‹t
+(
+fú°
+, 
+œ°
+){
+
+109 
+mid
+ = 0;
+
+110 if(
+fú°
+<
+œ°
+){
+
+111 
+mid
+ = (
+fú°
++
+œ°
+)/2;
+
+114 
+	`mîge_s‹t
+(
+fú°
+, 
+mid
+);
+
+115 
+	`mîge_s‹t
+(
+mid
++1,
+œ°
+);
+
+116 
+	`mîge
+(
+fú°
+,
+mid
+,
+œ°
+);
+
+119 
+	}
+}
+
+121 
+	$s‹t
+(
+num
+) {
+
+122 
+i
+ = 1; i < 
+num
+; i++) {
+
+123 
+key
+ = 
+aiNumbî
+[
+i
+];
+
+124 
+j
+ = 
+i
+ - 1;
+
+125 (
+j
+ >0Ë&& (
+aiNumbî
+[j] > 
+key
+)) {
+
+126 
+aiNumbî
+[
+j
+ + 1] =áiNumber[j];
+
+127 
+j
+--;
+
+130 
+aiNumbî
+[
+j
+ + 1] = 
+key
+;
+
+133 
+i
+ = 0; i < 
+num
+; i++) {
+
+134 
+	`Ârötf
+(
+°dîr
+, "aiNumbî[%d]=%d\n", 
+i
+, 
+aiNumbî
+[i]);
+
+136 
+	}
+}
+
+139 
+	$öô
+() {
+
+140 
+acKeyPad
+['0'] = '0';
+
+141 
+acKeyPad
+['1'] = '1';
+
+142 
+acKeyPad
+['2'] =ácKeyPad['A'] =ácKeyPad['B'] =ácKeyPad['C'] = '2';
+
+143 
+acKeyPad
+['3'] =ácKeyPad['D'] =ácKeyPad['E'] =ácKeyPad['F'] = '3';
+
+144 
+acKeyPad
+['4'] =ácKeyPad['G'] =ácKeyPad['H'] =ácKeyPad['I'] = '4';
+
+145 
+acKeyPad
+['5'] =ácKeyPad['J'] =ácKeyPad['K'] =ácKeyPad['L'] = '5';
+
+146 
+acKeyPad
+['6'] =ácKeyPad['M'] =ácKeyPad['N'] =ácKeyPad['O'] = '6';
+
+147 
+acKeyPad
+['7'] =ácKeyPad['P'] =ácKeyPad['R'] =ácKeyPad['S'] = '7';
+
+148 
+acKeyPad
+['8'] =ácKeyPad['T'] =ácKeyPad['U'] =ácKeyPad['V'] = '8';
+
+149 
+acKeyPad
+['9'] =ácKeyPad['W'] =ácKeyPad['X'] =ácKeyPad['Y'] = '9';
+
+150 
+	}
+}
+
+152 
+	$°‹eI≈ut
+(
+numOrigö
+[], 
+Àngth
+, 
+ödex
+) {
+
+153 
+ãmp
+[8] = {0};
+
+155 
+i
+ = 0, 
+j
+ = 0; i < 
+Àngth
+; i++) {
+
+156 i‡(
+numOrigö
+[
+i
+] == '\0') {
+
+160 i‡(
+numOrigö
+[
+i
+] == '-') {
+
+164 
+ãmp
+[
+j
+] = 
+acKeyPad
+[
+numOrigö
+[
+i
+]];
+
+165 
+j
+++;
+
+168 
+aiNumbî
+[
+ödex
+] = 
+	`©oi
+(
+ãmp
+);
+
+169 
+	`Ârötf
+(
+°dîr
+, "aiNumbî[%d]=%d\n", 
+ödex
+, 
+aiNumbî
+[index]);
+
+170 
+	}
+}
+
+	@/Users/moon/poj/1002/cscope.files
+
+1 /
+	gU£rs
+/
+	gmo⁄
+/
+	gpoj
+/1002/487-3279.c
+
+2 /
+	gU£rs
+/
+	gmo⁄
+/
+	gpoj
+/1002/
+	gcsc›e
+.
+	gfûes
+
+
+	@
+1
+.
+0
+2
+66
+/Users/moon/poj/1002/487-3279.c
+/Users/moon/poj/1002/cscope.files

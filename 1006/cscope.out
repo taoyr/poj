@@ -1,0 +1,223 @@
+cscope 15 $HOME/poj/1006 -q 0000000020 0000001100
+	@/Users/moon/poj/1006/Biorhythms.c
+
+1 
+	~<¡dio.h
+>
+
+3 
+	$maš
+() {
+
+4 
+p
+ = 0;
+
+5 
+e
+ = 0;
+
+6 
+i
+ = 0;
+
+7 
+d
+ = 0;
+
+8 
+day1
+ = 0;
+
+9 
+ÿ£Num
+ = 1;
+
+11 
+	`sÿnf
+("%d%d%d%d", &
+p
+, &
+e
+, &
+i
+, &
+d
+);
+
+13 ià(
+p
+ =ğ-1 && 
+e
+ =ğ-1 && 
+i
+ =ğ-1 && 
+d
+ == -1) {
+
+17 ià(
+p
+ =ğ
+e
+ &&ƒ =ğ
+i
+) {
+
+18 ià(
+i
+ =ğ
+d
+) {
+
+19 
+	`´štf
+("Ca£ %d:hÃxˆŒË…—k occur š %d days.\n", 
+ÿ£Num
+, 21252 - 
+d
+);
+
+20 
+ÿ£Num
+++;
+
+22 } ià(
+d
+ < 
+i
+) {
+
+23 
+	`´štf
+("Ca£ %d:hÃxˆŒË…—k occur š %d days.\n", 
+ÿ£Num
+, 
+p
+ - 
+d
+);
+
+24 
+ÿ£Num
+++;
+
+29 
+x
+ = 0, 
+y
+ = 0; x < 100000;) {
+
+30 ià(
+p
+ + 23 * 
+x
+ =ğ
+e
+ + 28 * 
+y
+) {
+
+31 
+day1
+ = 
+p
+ + 23 * 
+x
+;
+
+32 
+‹mp
+ = (
+day1
+ - 
+i
+) % 33;
+
+33 ià(0 =ğ
+‹mp
+) {
+
+34 ià(
+day1
+ - 
+d
+ > 0) {
+
+35 
+	`´štf
+("Ca£ %d:hÃxˆŒË…—k occur š %d days.\n", 
+ÿ£Num
+, 
+day1
+ - 
+d
+);
+
+36 
+ÿ£Num
+++;
+
+39 
+x
+++;
+
+43 
+x
+++;
+
+46 } ià(
+p
+ + 23 * 
+x
+ > 
+e
+ + 28 * 
+y
+) {
+
+47 
+y
+++;
+
+49 
+x
+++;
+
+53 
+	}
+}
+
+	@/Users/moon/poj/1006/cscope.files
+
+1 /
+	gU£rs
+/
+	gmoÚ
+/
+	gpoj
+/1006/
+	gBiÜhythms
+.
+	gc
+
+
+2 /
+	gU£rs
+/
+	gmoÚ
+/
+	gpoj
+/1006/
+	gcscİe
+.
+	gfes
+
+
+	@
+1
+.
+0
+2
+68
+/Users/moon/poj/1006/Biorhythms.c
+/Users/moon/poj/1006/cscope.files
