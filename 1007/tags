@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+calUnsortedness	DnaSorting.c	/^int calUnsortedness(char* str, int len) {$/;"	f
+data	DnaSorting.c	/^node data[100];$/;"	v
+destroy	DnaSorting.c	/^void destroy(int m) {$/;"	f
+init	DnaSorting.c	/^void init() {$/;"	f
+main	DnaSorting.c	/^int main() {$/;"	f
+node	DnaSorting.c	/^typedef struct node {$/;"	s	file:
+node	DnaSorting.c	/^} node;$/;"	t	typeref:struct:node	file:
+num	DnaSorting.c	/^    int num;$/;"	m	struct:node	file:
+output	DnaSorting.c	/^void output(int m) {$/;"	f
+sort	DnaSorting.c	/^void sort(int m) {$/;"	f
+std	Makefile	/^	gcc -c -std=c99 -g DnaSorting.c -o DnaSorting.o -g$/;"	m
+std	Makefile	/^	gcc -std=c99 -g DnaSorting.o -o DnaSorting$/;"	m
+store	DnaSorting.c	/^void store(char* str, int strLen, int num, int index) {$/;"	f
+str	DnaSorting.c	/^    char* str;$/;"	m	struct:node	file:
