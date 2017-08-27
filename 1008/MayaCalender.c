@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char* haabMonName[19] = {"pop" , "no"     , "zip"     , "zotz"   , "tzec" ,
+                         "xul" , "yoxkin" , "mol"     , "chen"   , "yax"  ,
+                         "zac" , "ceh"    , "mac"     , "kankin" , "muan" ,
+                         "pax" , "koyab"  , "cumhu"   , "uayet"};
+
+char* tzolkinMonName[20] = {"imix"  , "ik"    , "akbal" , "kan"   , "chicchan" ,
+                            "cimi"  , "manik" , "lamat" , "muluk" , "ok"       ,
+                            "chuen" , "eb"    , "ben"   , "ix"    , "mem"      ,
+                            "cib"   , "caban" , "eznab" , "canac" , "ahau"};
+
+int getNum(int days);
+void getName(int days, char *name);
+int getDays(char *line);
+
+int main() {
+    int n = 0;
+    char line[100] = {0};
+    char name[10] = {0};
+
+    scanf("%d", &n);
+    getchar();
+    printf("%d\n", n);
+
+    for (int i = 0; i < n; i++) {
+        for (int k = 0; k < 100; k++) {
+            line[k] = '\0';
+        }
+
+        for (int k = 0; k < 10; k++) {
+            name[k] = '\0';
+        }
+
+        fgets(line, 100, stdin);
+
+        int days = getDays(line);
+
+        int years = 0;
+
+        if (260 >= days) {
+            years = 0;
+        } else if (0 == days % 260) {
+            years = days / 260 - 1;
+            days = 260;
+        } else {
+            years = days / 260;
+            days = days % 260;
+        }
+
+        int tzolkinNum = getNum(days);
+        getName(days, name);
+
+        printf("%d %s %d\n", tzolkinNum, name, years);
+    }
+}
+
+int getNum(int days) {
+    if (0 == days % 13) {
+        return 13;
+    }
+
+    return days % 13;
+}
+
+void getName(int days, char *name) {
+    int index = 0;
+
+    if (20 >= days) {
+        index = days - 1;
+    } else if (0 == days % 20) {
+        index = 19;
+    } else {
+        index = days % 20 - 1;
+    }
+
+    strcpy(name, tzolkinMonName[index]);
+}
+
+int getDays(char *line) {
+    if (NULL == line) {
+        return -1;
+    }
+
+    char *p_key = strtok(line, ". \n");
+    int day = -1;
+    int mon = -1;
+    int year = -1;
+
+    while (NULL != p_key) {
+        if (-1 == day) {
+            day = atoi(p_key);
+        } else if (-1 == mon) {
+            for (int i = 0; i < 19; i++) {
+                if (0 == strcmp(haabMonName[i], p_key)) {
+                    mon = i;
+                }
+            }
+        } else {
+            year = atoi(p_key);
+        }
+
+        p_key = strtok(NULL, ". \n");
+    }
+
+    day = year * 365 + mon * 20 + day + 1;
+
+    return day;
+}
